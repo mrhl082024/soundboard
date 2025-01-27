@@ -3,8 +3,18 @@
     padding: 0;
     box-sizing: 0;
 }
-
+#sound-card{
+    width: 200px;
+    height: 100px;
+}
+#title{
+    text-align: center;
+}
 #play-btn{
+    width: 100px;
+    height: 50px;
+}
+#pause-btn{
     width: 100px;
     height: 50px;
 }
