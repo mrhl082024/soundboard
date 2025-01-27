@@ -4,24 +4,25 @@ const audioArray = ["/home/laheromi/Desktop/vscode/javascript/soundboard/sounds/
 
 function createSoundBtn(){
     for (let i = 0; i < audioArray.length; i++) {
+        const audio = new Audio([i]);
         const soundCard = document.createElement("div");
         soundCard.id = "sound-card";
         const title = document.createElement("p")
         title.textContent = "Sound";
         title.id = "title";
         const playBtn =document.createElement("button");
-        playBtn.src = i;
+/*         playBtn.src = i; */
         playBtn.id = "play-btn";
         playBtn.textContent = "Play";
         const pauseBtn = document.createElement("button");
-        pauseBtn.src = i;
+/*         pauseBtn.src = i; */
         pauseBtn.id = "pause-btn";
         pauseBtn.textContent = "Pause";
         playBtn.addEventListener("click", () => {
-
+            audio.play();
         });
         pauseBtn.addEventListener("click", () => {
-
+            audio.pause();
         } );
         soundCard.appendChild(title);
         soundCard.appendChild(playBtn);
