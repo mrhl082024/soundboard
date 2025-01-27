@@ -37,4 +37,19 @@ function createSoundBtn(){
 }
 createSoundBtn()
 
+const addSoundBtn = document.querySelector("#import-sound");
+const customContainer = document.getElementById("custom-sounds");
 
+let customSounds = [];
+
+addSoundBtn.addEventListener("click", () => {
+    const popUp = document.createElement("div");
+    const closeBtn = document.createElement("button");
+    const inputField = document.createElement("input");
+    const addBtn = document.createElement("button");
+    popUp.appendChild(closeBtn)
+    popUp.appendChild(inputField)
+    popUp.appendChild(addBtn)
+    window.open(popUp, "popup")
+})
+    
