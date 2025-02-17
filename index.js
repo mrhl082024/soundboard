@@ -24,28 +24,8 @@ function createSoundBtn() {
     title.textContent = audioArray[i].split("sounds/").pop();
     title.id = "title";
 
-    // const playBtn = document.createElement("button");
-    // playBtn.className = "sound-btn";
-    // playBtn.textContent = "Play";
-    // playBtn.id = "play-btn";
-
-    // const pauseBtn = document.createElement("button");
-    // pauseBtn.className = "sound-btn";
-    // pauseBtn.textContent = "Pause";
-    // pauseBtn.id = "pause-btn";
-
-    // playBtn.addEventListener("click", () => {
-    //   audio.play();
-    // });
-
-    // pauseBtn.addEventListener("click", () => {
-    //   audio.pause();
-    // });
-
     soundCard.appendChild(title);
     soundCard.appendChild(audio);
-    // soundCard.appendChild(playBtn);
-    // soundCard.appendChild(pauseBtn);
     container.appendChild(soundCard);
   }
 }

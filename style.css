@@ -34,14 +34,6 @@
   border-radius: 3rem;
   color: rgb(212, 95, 40);
 }
-/* #play-btn {
-  color: green;
-  grid-area: b;
-}
-#pause-btn {
-  color: red;
-  grid-area: c;
-} */
 #audio {
   grid-area: b;
 }
